@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Management Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen">
+        <!-- Sidebar -->
+        <aside class="fixed inset-y-0 left-0 bg-blue-600 w-64 p-4 text-white">
+            <div class="flex items-center mb-8">
+                <i class="fas fa-hospital text-2xl mr-2"></i>
+                <h1 class="text-xl font-bold">HealthCare Pro</h1>
+            </div>
+            <nav>
+                <ul class="space-y-2">
+                    <li class="bg-blue-700 p-2 rounded">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-home mr-2"></i> Tableau de bord
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-user-injured mr-2"></i> Patients
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-calendar-alt mr-2"></i> Rendez-vous
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-pills mr-2"></i> Médicaments
+                        </a>
+                    </li>
+                    <li class="p-2">
+                        <a href="#" class="flex items-center">
+                            <i class="fas fa-file-medical mr-2"></i> Rapports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="ml-64 p-8">
+            <!-- Header -->
+            <header class="flex justify-between items-center mb-8">
+                <h2 class="text-2xl font-bold">Tableau de bord</h2>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-white p-2 rounded-full shadow">
+                        <i class="fas fa-bell"></i>
+                    </button>
+                    <div class="flex items-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt="Profile" class="w-10 h-10 rounded-full">
+                        <span class="ml-2">Dr. Martin</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Total Patients</p>
+                            <h3 class="text-2xl font-bold">1,284</h3>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-full">
+                            <i class="fas fa-users text-blue-600"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-500 mt-2">+2.5% cette semaine</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Rendez-vous</p>
+                            <h3 class="text-2xl font-bold">42</h3>
+                        </div>
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <i class="fas fa-calendar text-green-600"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-500 mt-2">12 aujourd'hui</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Consultations</p>
+                            <h3 class="text-2xl font-bold">845</h3>
+                        </div>
+                        <div class="bg-purple-100 p-3 rounded-full">
+                            <i class="fas fa-stethoscope text-purple-600"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-500 mt-2">+5% ce mois</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-gray-500">Revenus</p>
+                            <h3 class="text-2xl font-bold">52,450€</h3>
+                        </div>
+                        <div class="bg-yellow-100 p-3 rounded-full">
+                            <i class="fas fa-euro-sign text-yellow-600"></i>
+                        </div>
+                    </div>
+                    <p class="text-green-500 mt-2">+12% ce mois</p>
+                </div>
+            </div>
+
+            <!-- Recent Patients & Appointments -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Recent Patients -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Patients récents</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt="Patient" class="w-10 h-10 rounded-full">
+                                <div class="ml-3">
+                                    <p class="font-medium">Sophie Martin</p>
+                                    <p class="text-sm text-gray-500">Consultation générale</p>
+                                </div>
+                            </div>
+                            <span class="text-blue-600">14:30</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt="Patient" class="w-10 h-10 rounded-full">
+                                <div class="ml-3">
+                                    <p class="font-medium">Jean Dupont</p>
+                                    <p class="text-sm text-gray-500">Suivi cardiaque</p>
+                                </div>
+                            </div>
+                            <span class="text-blue-600">15:00</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"  alt="Patient" class="w-10 h-10 rounded-full">
+                                <div class="ml-3">
+                                    <p class="font-medium">Marie Bernard</p>
+                                    <p class="text-sm text-gray-500">Contrôle diabète</p>
+                                </div>
+                            </div>
+                            <span class="text-blue-600">16:15</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Appointments -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Prochains rendez-vous</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-calendar text-blue-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">Consultation générale</p>
+                                <p class="text-sm text-gray-500">14:30 - Sophie Martin</p>
+                            </div>
+                            <button class="ml-auto bg-blue-50 text-blue-600 px-3 py-1 rounded">
+                                Détails
+                            </button>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <i class="fas fa-heartbeat text-green-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">Suivi cardiaque</p>
+                                <p class="text-sm text-gray-500">15:00 - Jean Dupont</p>
+                            </div>
+                            <button class="ml-auto bg-blue-50 text-blue-600 px-3 py-1 rounded">
+                                Détails
+                            </button>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-purple-100 p-3 rounded-full">
+                                <i class="fas fa-notes-medical text-purple-600"></i>
+                            </div>
+                            <div class="ml-3">
+                                <p class="font-medium">Contrôle diabète</p>
+                                <p class="text-sm text-gray-500">16:15 - Marie Bernard</p>
+                            </div>
+                            <button class="ml-auto bg-blue-50 text-blue-600 px-3 py-1 rounded">
+                                Détails
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
